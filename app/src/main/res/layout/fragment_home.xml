@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:textAlignment="textStart"
-    tools:context=".MainActivity">
+    tools:context=".Home">
 
+    <!-- TODO: Update blank fragment layout -->
 
     <TableRow
         android:id="@+id/tableRow"
-        android:layout_width="match_parent"
-        android:layout_height="77dp"
+        android:layout_width="412dp"
+        android:layout_height="74dp"
         android:layout_gravity="clip_vertical|center_horizontal|fill_horizontal|fill_vertical|end"
         android:background="#FFFFFF"
         android:gravity="center|center_horizontal"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        tools:layout_editor_absoluteY="-3dp">
+        android:paddingRight="20dp">
 
         <ImageView
             android:id="@+id/home_menu"
@@ -74,36 +72,6 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColorHighlight="#FFFFFF"
                 android:textSize="16sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="0dp"
-                android:fontFamily="@font/poppins_bold"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                tools:text="👋 Hey, " />
-            <TextView
-                android:id="@+id/home_displayname"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="16dp"
-                android:fontFamily="@font/poppins_bold"
-                android:textColor="#A393BF"
-                android:textSize="18sp"
-                android:text="$displayName"
-                />
-
-        </LinearLayout>
 
 
             <HorizontalScrollView
@@ -193,9 +161,7 @@
                         android:text="Competitions"
                         android:textAllCaps="false"
                         android:textColor="#453750"
-                        android:textSize="14sp"
-                        app:strokeColor="#453750"
-                        app:strokeWidth="1dp" />
+                        android:textSize="14sp" />
 
                     <Button
                         android:id="@+id/button7"
@@ -210,9 +176,7 @@
                         android:text="Podcasts"
                         android:textAllCaps="false"
                         android:textColor="#453750"
-                        android:textSize="14sp"
-                        app:strokeColor="#453750"
-                        app:strokeWidth="1dp" />
+                        android:textSize="14sp" />
 
                     <Button
                         android:id="@+id/button8"
@@ -227,9 +191,7 @@
                         android:text="Marketing"
                         android:textAllCaps="false"
                         android:textColor="#453750"
-                        android:textSize="14sp"
-                        app:strokeColor="#453750"
-                        app:strokeWidth="1dp" />
+                        android:textSize="14sp"/>
 
                     <Button
                         android:id="@+id/button9"
@@ -244,9 +206,7 @@
                         android:text="Newsfeeds"
                         android:textAllCaps="false"
                         android:textColor="#453750"
-                        android:textSize="14sp"
-                        app:strokeColor="#453750"
-                        app:strokeWidth="1dp" />
+                        android:textSize="14sp" />
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -266,10 +226,7 @@
                 android:textAllCaps="false"
                 android:textColor="#000000"
                 android:textDirection="firstStrongRtl"
-                android:textSize="26sp"
-                app:cornerRadius="20dp"
-                app:strokeColor="#000000"
-                app:strokeWidth="2sp" />
+                android:textSize="26sp" />
 
             <Button
                 android:id="@+id/home_image_button_bottom"
@@ -286,13 +243,10 @@
                 android:textAllCaps="false"
                 android:textColor="#000000"
                 android:textDirection="firstStrongRtl"
-                android:textSize="26sp"
-                app:cornerRadius="20dp"
-                app:strokeColor="#000000"
-                app:strokeWidth="2sp" />
+                android:textSize="26sp"/>
 
         </LinearLayout>
     </ScrollView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
